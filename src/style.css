@@ -9,8 +9,8 @@
   --secondary-font: "Great Vibes", cursive;
   --color-primary: #5cb338;
   --color-primary-lighter: #aeea94;
-  --color-white: #fff;
-  --color-white-lighter: #f7f7f7;
+  --color-blue: #0118d8;
+  --color-blue-lighter: #2973b2;
   --color-black-main: #000;
   --color-black-light: #393e46;
 }
@@ -33,7 +33,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--color-white-lighter);
+  background-color: var(--color-blue-lighter);
 }
 
 .urban-title {
@@ -89,6 +89,7 @@ html {
 .header-items a {
   text-decoration: none;
   font-size: 2rem;
+  color: var(--color-black-main);
 }
 
 .header-cta-btn {
@@ -105,27 +106,44 @@ html {
 
 /*Hero Section*/
 .hero-section {
-  /*border: 2px solid green;*/
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-}
-
-.hero-section img {
-  width: 100%;
+  padding: 2rem;
+  max-height:500px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/Images/Hero\ Section.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  flex-wrap: wrap;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/*@media screen and (max-width: 500px) {
-  .items {
-    display: none;
-  }
-  .urban-title {
-    font-size: 4rem;
-  }
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+  margin-top: 5rem;
 }
-*/
+
+.hero-title-sub {
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 10rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.hero-title-main {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--color-blue);
+  text-align: center;
+  letter-spacing: 1.5px;
+}
 
 /*End of Hero Section*/
