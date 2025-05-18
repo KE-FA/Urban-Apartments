@@ -5,15 +5,14 @@
 }
 
 :root {
-  --primary-font:"Ancizar Sans", sans-serif;
-  --secondary-font:"Great Vibes", cursive;
-  --color-primary:#5CB338;
-  --color-primary-lighter:#AEEA94;
-  --color-white:#fff;
-  --color-white-lighter:#F7F7F7;
-  --color-black-main:#000;
-  --color-black-light:#393E46;
-  
+  --primary-font: "Ancizar Sans", sans-serif;
+  --secondary-font: "Great Vibes", cursive;
+  --color-primary: #5cb338;
+  --color-primary-lighter: #aeea94;
+  --color-white: #fff;
+  --color-white-lighter: #f7f7f7;
+  --color-black-main: #000;
+  --color-black-light: #393e46;
 }
 
 html {
@@ -21,11 +20,9 @@ html {
   font-size: 62.5%;
 }
 
-.body{
+.body {
   font-size: 1.6rem;
 }
-
-
 
 /*Header Items*/
 .header-nav {
@@ -36,27 +33,72 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f2f2f2;
+  background-color: var(--color-white-lighter);
 }
 
 .urban-title {
   font-family: var(--secondary-font);
-  font-weight: 900;
-  font-style: normal;
-  font-size: 5rem;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--color-black-main);
+  text-decoration: none;
 }
 
 .items {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   /*border: 2px solid red;*/
   list-style: none;
   text-transform: uppercase;
 }
 
-a {
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+  .items {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-nav {
+    align-items: flex-start;
+    position: relative;
+  }
+  .items {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 450px) {
+    .urban-title {
+      font-size: 2rem;
+    }
+  }
+}
+
+.header-items a {
   text-decoration: none;
   font-size: 2rem;
+}
+
+.header-cta-btn {
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 /* End of Header Items */
@@ -76,7 +118,14 @@ a {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
+  .items {
+    display: none;
+  }
+  .urban-title {
+    font-size: 4rem;
+  }
 }
+*/
 
 /*End of Hero Section*/
