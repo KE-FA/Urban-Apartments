@@ -13,6 +13,7 @@
   --color-blue-lighter: #2973b2;
   --color-black-main: #000;
   --color-black-light: #393e46;
+  --color-white: #fffdf6;
 }
 
 html {
@@ -107,7 +108,7 @@ html {
 /*Hero Section*/
 .hero-section {
   padding: 2rem;
-  max-height:500px;
+  max-height: 500px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(/Images/Hero\ Section.jpg);
@@ -140,10 +141,55 @@ html {
 
 .hero-title-main {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-blue);
   text-align: center;
   letter-spacing: 1.5px;
 }
 
 /*End of Hero Section*/
+
+/* Rooms Stylings*/
+.rooms {
+  background-color: var(--color-white);
+  padding: 3rem 0.5rem;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/Images/bg1.webp);
+}
+
+.room-title {
+  font-family: var(--secondary-font);
+  font-size: 5rem;
+  color:var(--color-primary);
+  text-transform: capitalize;
+
+  text-align: center;
+}
+.room-type > img {
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 3rem;
+}
+
+.room-desc {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-wrap: balance;
+  color:var(--color-white)
+}
+
+.room-type {
+  /* border: 2px solid red; */
+  width: 250px;
+}
+
+.room-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/*End of Rooms Stylings*/
