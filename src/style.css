@@ -5,14 +5,15 @@
 }
 
 :root {
-  --primary-font: "Ancizar Sans", sans-serif;
-  --secondary-font: "Great Vibes", cursive;
-  --color-primary: #5cb338;
-  --color-primary-lighter: #aeea94;
-  --color-white: #fff;
-  --color-white-lighter: #f7f7f7;
-  --color-black-main: #000;
-  --color-black-light: #393e46;
+  --primary-font:"Ancizar Sans", sans-serif;
+  --secondary-font:"Great Vibes", cursive;
+  --color-primary:#5CB338;
+  --color-primary-lighter:#AEEA94;
+  --color-white:#fff;
+  --color-white-lighter:#F7F7F7;
+  --color-black-main:#000;
+  --color-black-light:#393E46;
+  
 }
 
 html {
@@ -20,9 +21,11 @@ html {
   font-size: 62.5%;
 }
 
-.body {
+.body{
   font-size: 1.6rem;
 }
+
+
 
 /*Header Items*/
 .header-nav {
@@ -37,7 +40,7 @@ html {
 }
 
 .urban-title {
-  font-family:;
+  font-family: var(--secondary-font);
   font-weight: 900;
   font-style: normal;
   font-size: 5rem;
