@@ -170,6 +170,11 @@ html {
   padding: 1rem;
   width: 25rem;
   border-radius: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.room-type > img:hover {
+  transform: scale(1.1);
 }
 
 .room-desc {
@@ -192,4 +197,41 @@ html {
   gap: 2rem;
 }
 
-/*End of Rooms Stylings*/
+/*End of Rooms Styling Section*/
+
+/*Amenities Stylings*/
+.social-title {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-family: var(--secondary-font);
+  color: var(--color-black-main);
+  font-size: 5rem;
+}
+
+.social-categories {
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--color-white);
+}
+.social-amenitie {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.social-amenitie-item {
+  width: 25rem;
+}
+.social-amenitie-item > img {
+  width: 6rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.social-category-desc {
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+/*End of Amenities Stylings*/
