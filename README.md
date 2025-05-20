@@ -4,7 +4,7 @@ This is a landing page for a fictional company, Urban Haven, that offers house r
 
 ![alt="Urban Haven"](./Images/Capture.PNG)
 
-#### check out live demo https://urban-haven-ashen.vercel.app/
+#### Check out live demo https://urban-haven-ashen.vercel.app/
 
 ## Getting Started
 
@@ -20,6 +20,6 @@ cd Urban-Haven
 
 npm install
 
-### start up the local server:
+### Start up the local server:
 
 npm run dev
