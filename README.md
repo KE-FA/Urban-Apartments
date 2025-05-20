@@ -1,4 +1,4 @@
-#URBAN HAVEN APARTMENTS
+# URBAN HAVEN APARTMENTS
 
 This is a landing page for a fictional company, Urban Haven, that offers house rental services. This application is built pure CSS and HTML.
 
